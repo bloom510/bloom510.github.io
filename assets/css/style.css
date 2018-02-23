@@ -1,4 +1,4 @@
-* {
+body {
     font-family: 'Barlow', sans-serif;
 }
 
@@ -86,6 +86,33 @@ nav {
     background-image: -webkit-linear-gradient(top left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
     /* W3C Markup */
     background-image: linear-gradient(to bottom right, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
+}
+
+#bio-content p,
+#portfolio-content p,
+#contact-content p {
+    padding: 5%;
+    /* text-align: justify; */
+    text-indent: 25px;
+    hyphens: auto;
+    word-break: keep-all;
+    /* word-spacing: 3px; */
+    /* text-align: center; */
+    color: black;
+}
+
+#social {
+    position: absolute;
+    top: 24%;
+    right: 47.5%;
+    text-align: center;
+    font-family: sans-serif, 'FontAwesome';
+    font-size: 90%;
+}
+
+#social a {
+    text-decoration: none;
+    color: black;
 }
 
 .expand {

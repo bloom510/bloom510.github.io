@@ -173,17 +173,18 @@
                         #enneagram1 {
                             width: 45px;
                             height: 45px;
-                            position: absolute;
+                            /* position: absolute; */
                             float: left;
-                            left: 8%;
-                            top: 34%;
+                            /* left: 8%;
+                            top: 34%; */
                         }
                         
                         #enneagram2 {
                             width: 45px;
                             height: 45px;
-                            position: absolute;
-                            float: left;
-                            right: 8%;
-                            top: 34%;
+                            float: right;
+                            /* position: absolute; */
+                            /* float: right; */
+                            /* right: 8%; */
+                            /* top: 34%; */
                         }

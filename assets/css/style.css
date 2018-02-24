@@ -1,162 +1,163 @@
-            body {
-            font-family: 'Barlow', sans-serif;
-        }
-        
-        a {
-            color: #00e589;
-        }
-        
-        header {
-            font-family: 'Rock Salt', cursive;
-            margin-bottom: -1%;
-        }
-        
-        #labels {
-            font-family: 'Barlow', sans-serif;
-            margin-bottom: 1%;
-        }
-        
-        #container {
-            /* position: relative; */
-            /* overflow: visible; */
-            max-width: 960px;
-            max-height: 740px;
-            width: 100%;
-            height: 100%;
-            margin: 0 auto;
-            /* border: 2px solid black; */
-        }
-        
-        #site-content-container {
-            overflow: visible;
-            /* width: 80%; */
-            height: 640px;
-            margin: 0 auto;
-            position: relative;
-            /* border: 2px solid black; */
-        }
-        
-        header,
-        nav {
-            text-align: center;
-        }
-        
-        .more-info {
-            text-align: center;
-            line-height: 50%;
-        }
-        
-        #bio,
-        #portfolio,
-        #contact {
-            width: 25%;
-            float: left;
-            padding-bottom: 1%;
-            margin-bottom: 3%;
-        }
-        
-        #bio {
-            position: absolute;
-            left: -2%;
-            top: 5%;
-        }
-        
-        #contact {
-            position: absolute;
-            right: -2%;
-            top: 5%;
-        }
-        
-        #portfolio {
-            position: absolute;
-            right: 38%;
-            top: 25%;
-        }
-        
-        #bio-content,
-        #portfolio-content,
-        #contact-content {
-            margin: 0 auto;
-            height: 100%;
-            /* IE10+ */
-            background-image: -ms-linear-gradient(top left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
-            /* Mozilla Firefox */
-            background-image: -moz-linear-gradient(top left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
-            /* Opera */
-            background-image: -o-linear-gradient(top left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
-            /* Webkit (Safari/Chrome 10) */
-            background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #ffffff), color-stop(47, #F6F6F6), color-stop(100, #ededed));
-            /* Webkit (Chrome 11+) */
-            background-image: -webkit-linear-gradient(top left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
-            /* W3C Markup */
-            background-image: linear-gradient(to bottom right, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
-        }
-        
-        #bio-content p,
-        #portfolio-content p,
-        #contact-content p {
-            padding: 5%;
-            /* text-align: justify; */
-            text-indent: 25px;
-            hyphens: auto;
-            word-break: keep-all;
-            /* word-spacing: 3px; */
-            /* text-align: center; */
-            color: black;
-            overflow: auto;
-        }
-        
-        #portfolio-content p {
-            text-indent: 0px;
-        }
-        
-        #social {
-            position: absolute;
-            top: 0%;
-            right: 47%;
-            text-align: center;
-            font-family: sans-serif, 'FontAwesome';
-            font-size: 90%;
-            /* float: left; */
-            /* margin-right: 2%; */
-        }
-        
-        #social a {
-            text-decoration: none;
-            color: black;
-        }
-        
-        .expand {
-            cursor: pointer;
-        }
-        
-        #headshot {
-            margin: 0 auto;
-            width: 100%;
-            height: 50%;
-        }
-        
-        #project_info {
-            display: none;
-            position: absolute;
-            max-width: 200px;
-            padding: 1%;
-            /* height: 100%; */
-            /* right: 10%; */
-            /* left: 9%; */
-            right: 9%;
-            border: 1px solid black;
-        }
-        
-        #portfolio-content p a {
-            display: inline-block;
-        }
-        
-        #info-container {
-            /* position: relative; */
-            margin-top: 24%;
-            margin-left: 0;
-            /* border: 2px solid red; */
-            height: 450px;
-            width: 25%;
-            float: right;
+                body {
+                font-family: 'Barlow', sans-serif;
+            }
+            
+            a {
+                color: #00e589;
+            }
+            
+            header {
+                font-family: 'Rock Salt', cursive;
+                margin-bottom: -1%;
+            }
+            
+            #labels {
+                font-family: 'Barlow', sans-serif;
+                margin-bottom: 1%;
+            }
+            
+            #container {
+                /* position: relative; */
+                /* overflow: visible; */
+                max-width: 960px;
+                max-height: 740px;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                /* border: 2px solid black; */
+            }
+            
+            #site-content-container {
+                overflow: visible;
+                /* width: 80%; */
+                height: 640px;
+                margin: 0 auto;
+                position: relative;
+                /* border: 2px solid black; */
+            }
+            
+            header,
+            nav {
+                text-align: center;
+            }
+            
+            .more-info {
+                text-align: center;
+                line-height: 50%;
+            }
+            
+            #bio,
+            #portfolio,
+            #contact {
+                width: 25%;
+                float: left;
+                padding-bottom: 1%;
+                margin-bottom: 3%;
+            }
+            
+            #bio {
+                position: absolute;
+                left: -2%;
+                top: 5%;
+            }
+            
+            #contact {
+                position: absolute;
+                right: -2%;
+                top: 5%;
+            }
+            
+            #portfolio {
+                position: absolute;
+                right: 38%;
+                top: 25%;
+            }
+            
+            #bio-content,
+            #portfolio-content,
+            #contact-content {
+                margin: 0 auto;
+                height: 100%;
+                /* IE10+ */
+                background-image: -ms-linear-gradient(top left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
+                /* Mozilla Firefox */
+                background-image: -moz-linear-gradient(top left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
+                /* Opera */
+                background-image: -o-linear-gradient(top left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
+                /* Webkit (Safari/Chrome 10) */
+                background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #ffffff), color-stop(47, #F6F6F6), color-stop(100, #ededed));
+                /* Webkit (Chrome 11+) */
+                background-image: -webkit-linear-gradient(top left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
+                /* W3C Markup */
+                background-image: linear-gradient(to bottom right, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
+            }
+            
+            #bio-content p,
+            #portfolio-content p,
+            #contact-content p {
+                padding: 5%;
+                /* text-align: justify; */
+                text-indent: 25px;
+                hyphens: auto;
+                word-break: keep-all;
+                /* word-spacing: 3px; */
+                /* text-align: center; */
+                color: black;
+                overflow: auto;
+            }
+            
+            #portfolio-content p {
+                text-indent: 0px;
+            }
+            
+            #social {
+                position: absolute;
+                top: 0%;
+                right: 47%;
+                text-align: center;
+                font-family: sans-serif, 'FontAwesome';
+                font-size: 90%;
+                /* float: left; */
+                /* margin-right: 2%; */
+            }
+            
+            #social a {
+                text-decoration: none;
+                color: black;
+            }
+            
+            .expand {
+                cursor: pointer;
+            }
+            
+            #headshot {
+                margin: 0 auto;
+                width: 100%;
+                height: 50%;
+            }
+            
+            #project_info {
+                display: none;
+                position: absolute;
+                max-width: 200px;
+                width: 100%;
+                padding: 1%;
+                /* height: 100%; */
+                /* right: 10%; */
+                /* left: 9%; */
+                right: 9%;
+                border: 1px solid black;
+            }
+            
+            #portfolio-content p a {
+                display: inline-block;
+            }
+            
+            #info-container {
+                /* position: relative; */
+                margin-top: 24%;
+                margin-left: 0;
+                /* border: 2px solid red; */
+                height: 450px;
+                width: 25%;
+                float: right;

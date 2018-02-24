@@ -15,7 +15,6 @@
 
 <body>
     <div id='container'>
-
         <!-- begin header -->
         <header>@bloom.510</header>
         <div id='triangle'></div>
@@ -27,7 +26,7 @@
         <!-- <br> -->
         <div id='site-content-container'>
             <div id='social'>
-                <a href='https://github.com/wildcat510' target='_blank'>
+                <a href='https://github.com/bloom510' target='_blank'>
                     <icon class="fab fa-github"></icon>
                 </a>
                 <a href='https://linkedin.com/in/bloom510' target='_blank'>
@@ -71,27 +70,29 @@
                     <p style='display:none;'>
                         Multidisciplinary:
                         <br>
-                        <br> > Vedic.js
-                        <br> > Pitch Canvas
+                        <br> > <a href='#' class='project' data-for='vedic'>Vedic.js</a>
+
+
+                        <br> > <a href='https://bloom510.github.io/PitchCanvas/' target='_blank' data-for='pitchcanvas' class='project'>Pitch Canvas</a>
                         <br>
                         <br> Web Development:
                         <br>
-                        <br> > StockGEN
-                        <br> > SocketCanvas
-                        <br> > Spark FriendFinder
-                        <br> > Brutalist Burgers
-                        <br> > Bamazon
-                        <br> > Liri-Bot
-                        <br> > H20de
+                        <br> > <a href='#' class='project'>StockGEN</a>
+                        <br> > <a href='#' class='project'>SocketCanvas</a>
+                        <br> > <a href='#' class='project'>Spark FriendFinder</a>
+                        <br> > <a href='#' class='project'>Brutalist Burgers</a>
+                        <br> > <a href='#' class='project'>Bamazon</a>
+                        <br> > <a href='#' class='project'>Liri-Bot</a>
+                        <br> > <a href='#' class='project'>H20de</a>
                         <br>
                         <br> Music:
                         <br>
-                        <br> > bloom510.bandcamp.com
+                        <br> > <a href='#' class='project'>Bandcamp</a>
                         <br>
                         <br> Music Theory:
                         <br>
-                        <br> > Extended Augmented <br> Harmony
-                        <br> > 9-Tonic System
+                        <br> > <a href='#' class='project'>Extended Augmented Harmony</a>
+                        <br> > <a href='#' class='project'>9-Tonic System</a>
 
                     </p>
                 </div>
@@ -111,7 +112,13 @@
                 </div>
             </div>
             <!-- end contact -->
+
+            <!-- begin project info -->
+            <div id='project_info'></div>
+            <!-- end project info -->
+
         </div>
+
     </div>
 
 </body>
@@ -121,6 +128,13 @@
         let hr = `<hr style='width:${pct}%;'>`;
         document.getElementById("triangle").innerHTML += hr;
     }
+    $(document).ready(function() {
+        $('.project').on('mouseover', function() {
+            $('#project_info').fadeIn(1500).text('Project info here');
+        }).on('mouseleave', function() {
+            $('#project_info').fadeOut(1500);
+        });
+    });
     // for (let pct = 85; pct > -1; pct -= 5) {
     //     let hr = `<hr style='width:${pct}%';>`;
     //     document.getElementById("triangle").innerHTML += hr;

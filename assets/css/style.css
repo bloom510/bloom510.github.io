@@ -11,12 +11,6 @@
                             margin-bottom: -1%;
                         }
                         
-                        #playlist {
-                            position: absolute;
-                            top: 0;
-                            left: -15%;
-                        }
-                        
                         #labels {
                             font-family: 'Barlow', sans-serif;
                             margin-bottom: 1%;
@@ -142,11 +136,18 @@
                             height: 50%;
                         }
                         
-                        iframe {
-                            /* position: absolute; */
-                            /* width: 45%; */
-                            /* height: 15%; */
-                            display: none;
+                        #playlist {
+                            position: absolute;
+                            top: 45%;
+                            left: 25%;
+                            width: 50%;
+                            height: 15%;
+                            opacity: .3;
+                        }
+                        
+                        #playlist:hover {
+                            transition: ease-in 1s;
+                            opacity: 1;
                         }
                         
                         #project_info {
@@ -160,6 +161,7 @@
                             /* left: 9%; */
                             right: 9%;
                             border: 1px solid black;
+                            z-index: 2;
                         }
                         
                         svg,

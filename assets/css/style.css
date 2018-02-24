@@ -139,13 +139,25 @@
     #project_info {
         display: none;
         position: absolute;
+        max-width: 200px;
         padding: 1%;
         /* height: 100%; */
-        right: 20%;
-        top: 36%;
+        /* right: 10%; */
+        /* left: 9%; */
+        right: 9%;
         border: 1px solid black;
     }
     
     #portfolio-content p a {
         display: inline-block;
+    }
+    
+    #info-container {
+        /* position: relative; */
+        margin-top: 24%;
+        margin-left: 0;
+        /* border: 2px solid red; */
+        height: 450px;
+        width: 25%;
+        float: right;
     }

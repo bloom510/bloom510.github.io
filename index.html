@@ -70,29 +70,29 @@
                     <p style='display:none;'>
                         Multidisciplinary:
                         <br>
-                        <br> > <a href='#' class='project' data-for='vedic'>Vedic.js</a>
+                        <br> > <a href='https://youtu.be/DCbZ_Ie2nzw' target='_blank' class='project' data-for='vedic'>Vedic</a>
 
 
                         <br> > <a href='https://bloom510.github.io/PitchCanvas/' target='_blank' data-for='pitchcanvas' class='project'>Pitch Canvas</a>
                         <br>
                         <br> Web Development:
                         <br>
-                        <br> > <a href='#' class='project'>StockGEN</a>
-                        <br> > <a href='#' class='project'>SocketCanvas</a>
-                        <br> > <a href='#' class='project'>Spark FriendFinder</a>
-                        <br> > <a href='#' class='project'>Brutalist Burgers</a>
-                        <br> > <a href='#' class='project'>Bamazon</a>
-                        <br> > <a href='#' class='project'>Liri-Bot</a>
-                        <br> > <a href='#' class='project'>H20de</a>
+                        <br> > <a href='https://www.youtube.com/watch?v=5PtsaH-ALoA' target='_blank' class='project' data-for='stockgen'>StockGEN</a>
+                        <br> > <a href='https://canvas-websocket.herokuapp.com' target='_blank' class='project' data-for='socketcanvas'>SocketCanvas</a>
+                        <br> > <a href='https://spark-friendfinder.herokuapp.com' target='_blank' class='project' data-for='spark'>Spark FriendFinder</a>
+                        <br> > <a href='https://damp-lake-64044.herokuapp.com' target='_blank' class='project' data-for='burgers'>Brutalist Burgers</a>
+                        <br> > <a href='#' class='project' data-for='bamazon'>Bamazon</a>
+                        <br> > <a href='#' class='project' data-for='liribot'>Liri-Bot</a>
+                        <br> > <a href='https://bloom510.github.io/hangman/' class='project' data-for='h20de'>H20de</a>
                         <br>
                         <br> Music:
                         <br>
-                        <br> > <a href='#' class='project'>Bandcamp</a>
+                        <br> > <a href='https://bloom510.bandcamp.com' class='project' data-for='bandcamp'>Bandcamp</a>
                         <br>
                         <br> Music Theory:
                         <br>
-                        <br> > <a href='#' class='project'>Extended Augmented Harmony</a>
-                        <br> > <a href='#' class='project'>9-Tonic System</a>
+                        <br> > <a href='#' class='project' data-for='extaug'><small>Extended Augmented Harmony</small></a>
+                        <br> > <a href='#' class='project' data-for='nts'>9-Tonic System</a>
 
                     </p>
                 </div>
@@ -114,7 +114,9 @@
             <!-- end contact -->
 
             <!-- begin project info -->
-            <div id='project_info'></div>
+            <div id='info-container'>
+                <div id='project_info'></div>
+            </div>
             <!-- end project info -->
 
         </div>
@@ -129,16 +131,32 @@
         document.getElementById("triangle").innerHTML += hr;
     }
     $(document).ready(function() {
+        let projects = {
+            vedic: '<h3><u>Vedic</u></h3>Generative music at your fingertips. Aimed at music producers of all types, Vedic is a desktop app which generates elegant musical sequences using Vedic math and modular arithmetic, allowing for conversion to MIDI for use in any DAW.',
+            pitchcanvas: '<h3><u>PitchCanvas</u></h3> An environment for visualization of harmonic structures on a 2-dimensional plane. Intended for use as an educational tool for the demonstration of musical concepts in future applications as well as a being a vehicle for harmonic exploration.',
+            stockgen: '<h3><u>StockGEN</u></h3> StockGEN follows extremely shrewd investment funds. At the push of a button, StockGEN assesses the user\'s desired risk profile. One can find top-holdings of top-performing hedge funds, their conviction bets, and their newest positions. ',
+            socketcanvas: '<h3><u>SocketCanvas</u></h3> An Express app providing a rudimentary demonstration of HTML5 Canvas + Socket.io. Users can see each other drawing in real time and erase the board to start over.',
+            spark: '<h3><u>Spark FriendFinder</u></h3> A mock friend-finder built using Express and a simple home-baked REST API',
+            burgers: '<h3><u>Brutalist Burgers</u></h3> A full-stack app built with Node+Express+MySQL',
+            bamazon: 'Info coming soon',
+            liribot: 'Info coming soon',
+            h20de: '<h3><u>H20de</u></h3> Like hangman, but uses words for water.',
+            bandcamp: 'Unfortunately not all my music has been recorded. A selection of my electronic productions is available on BandCamp and SoundCloud. I hope to record my instrumental work soon.',
+            extaug: 'Info coming soon',
+            nts: 'Info coming soon'
+
+        }
         $('.project').on('mouseover', function() {
-            $('#project_info').fadeIn(1500).text('Project info here');
+            for (key in projects) {
+                if (key.toString() === $(this).attr('data-for')) {
+                    $('#project_info').fadeIn(1000).html(projects[key]);
+                }
+            }
         }).on('mouseleave', function() {
-            $('#project_info').fadeOut(1500);
+            $('#project_info').hide();
+
         });
     });
-    // for (let pct = 85; pct > -1; pct -= 5) {
-    //     let hr = `<hr style='width:${pct}%';>`;
-    //     document.getElementById("triangle").innerHTML += hr;
-    // }
 </script>
 <script src='./assets/js/expand.js'></script>
 

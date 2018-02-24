@@ -143,10 +143,10 @@
                             width: 40%;
                             height: 15%;
                             opacity: .3;
+                            transition: ease-in 1s;
                         }
                         
                         #playlist:hover {
-                            transition: ease-in 1s;
                             opacity: 1;
                         }
                         

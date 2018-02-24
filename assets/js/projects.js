@@ -3,11 +3,12 @@
       document.getElementById("triangle").innerHTML += hr;
   }
 
+  function hideProj() {
+      $('#project_info').fadeOut(1000);
+  }
 
   $(document).ready(function() {
-      function hideProj() {
-          $('#project_info').fadeOut(1000);
-      }
+
       //TODO: Change into click events where info with actual links stays open. More mobile-friendly
       let projects = {
           vedic: '<h3><u>Vedic</u></h3>Generative music at your fingertips. Aimed at music producers of all types, Vedic is a desktop app which generates elegant musical sequences using Vedic math and modular arithmetic, allowing for conversion to MIDI for use in any DAW. <br><br> <small>[<a href=\'https://youtu.be/DCbZ_Ie2nzw\' target=\'_blank\'>Click here</a> for demo]</small> ',
@@ -33,4 +34,4 @@
           }
       });
 
-  });
+  })

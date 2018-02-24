@@ -188,3 +188,8 @@
                             /* right: 8%; */
                             /* top: 34%; */
                         }
+                        
+                        #enneagram1,
+                        #enneagram2 {
+                            margin-top: .73%;
+                        }

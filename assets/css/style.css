@@ -145,3 +145,7 @@
         top: 36%;
         border: 1px solid black;
     }
+    
+    #portfolio-content p a {
+        display: inline-block;
+    }

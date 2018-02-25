@@ -17,23 +17,18 @@
                         }
                         
                         #container {
-                            /* position: relative; */
-                            /* overflow: visible; */
                             max-width: 960px;
                             max-height: 740px;
                             width: 100%;
                             height: 100%;
                             margin: 0 auto;
-                            /* border: 2px solid black; */
                         }
                         
                         #site-content-container {
                             overflow: visible;
-                            /* width: 80%; */
                             height: 640px;
                             margin: 0 auto;
                             position: relative;
-                            /* border: 2px solid black; */
                         }
                         
                         header,
@@ -67,12 +62,6 @@
                             top: 5%;
                         }
                         
-                        #portfolio {
-                            position: absolute;
-                            right: 38%;
-                            top: 25%;
-                        }
-                        
                         #bio-content,
                         #portfolio-content,
                         #contact-content {
@@ -96,14 +85,17 @@
                         #portfolio-content p,
                         #contact-content p {
                             padding: 5%;
-                            /* text-align: justify; */
                             text-indent: 25px;
                             hyphens: auto;
                             word-break: keep-all;
-                            /* word-spacing: 3px; */
-                            /* text-align: center; */
                             color: black;
                             overflow: auto;
+                        }
+                        
+                        #portfolio {
+                            position: absolute;
+                            right: 38%;
+                            top: 25%;
                         }
                         
                         #portfolio-content p {
@@ -117,8 +109,6 @@
                             text-align: center;
                             font-family: sans-serif, 'FontAwesome';
                             font-size: 90%;
-                            /* float: left; */
-                            /* margin-right: 2%; */
                         }
                         
                         #social a {
@@ -137,11 +127,16 @@
                         }
                         
                         #playlist {
-                            position: absolute;
-                            top: 43%;
-                            left: 30%;
-                            width: 40%;
-                            height: 15%;
+                            /* -webkit-transform: rotate(-90deg);
+                            -moz-transform: rotate(-90deg);
+                            -o-transform: rotate(-90deg);
+                            -ms-transform: rotate(-90deg);
+                            transform: rotate(-90deg); */
+                            position: relative;
+                            left: 25%;
+                            top: 5%;
+                            width: 400px;
+                            height: 100px;
                             opacity: .5;
                             transition: ease-in 1s;
                         }
@@ -156,9 +151,6 @@
                             max-width: 200px;
                             width: 100%;
                             padding: 1%;
-                            /* height: 100%; */
-                            /* right: 10%; */
-                            /* left: 9%; */
                             right: 9%;
                             border: 1px solid black;
                             z-index: 2;
@@ -176,10 +168,8 @@
                         }
                         
                         #info-container {
-                            /* position: relative; */
                             margin-top: 24%;
                             margin-left: 0;
-                            /* border: 2px solid red; */
                             height: 450px;
                             width: 25%;
                             float: right;
@@ -188,20 +178,13 @@
                         #enneagram1 {
                             width: 45px;
                             height: 45px;
-                            /* position: absolute; */
                             float: left;
-                            /* left: 8%;
-                            top: 34%; */
                         }
                         
                         #enneagram2 {
                             width: 45px;
                             height: 45px;
                             float: right;
-                            /* position: absolute; */
-                            /* float: right; */
-                            /* right: 8%; */
-                            /* top: 34%; */
                         }
                         
                         #enneagram1,

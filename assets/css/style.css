@@ -22,13 +22,17 @@ header {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    /* border: 2px solid red; */
 }
 
 #site-content-container {
+    position: relative;
     overflow: visible;
     height: 640px;
     margin: 0 auto;
     position: relative;
+    margin-top: 4%;
+    /* border: 2px solid cyan; */
 }
 
 header,
@@ -46,20 +50,39 @@ nav {
 #contact {
     width: 25%;
     float: left;
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
     padding-bottom: 1%;
     margin-bottom: 3%;
 }
 
 #bio {
-    position: absolute;
     left: -2%;
-    top: 5%;
+    position: absolute;
+    /* left: -2%; */
+    /* top: 5%;  */
+}
+
+#portfolio {
+    position: absolute;
+    right: 38%;
+    /* top: 25%;  */
+    margin-top: 14%;
 }
 
 #contact {
     position: absolute;
     right: -2%;
-    top: 5%;
+}
+
+#social {
+    /* position: absolute; */
+    /* top: 0%; */
+    /* right: 47%; */
+    text-align: center;
+    font-family: sans-serif, 'FontAwesome';
+    font-size: 80%;
+    /* display: none; */
 }
 
 #bio-content,
@@ -92,23 +115,8 @@ nav {
     overflow: auto;
 }
 
-#portfolio {
-    position: absolute;
-    right: 38%;
-    top: 25%;
-}
-
 #portfolio-content p {
     text-indent: 0px;
-}
-
-#social {
-    position: absolute;
-    top: 0%;
-    right: 47%;
-    text-align: center;
-    font-family: sans-serif, 'FontAwesome';
-    font-size: 90%;
 }
 
 #social a {
@@ -133,8 +141,8 @@ nav {
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg); */
     position: relative;
-    left: 25%;
-    top: 5%;
+    left: 29%;
+    /* top: 5%; */
     width: 400px;
     height: 100px;
     opacity: 0;
@@ -145,13 +153,21 @@ nav {
     opacity: 1;
 }
 
-#project_info {
-    display: none;
+#info-container {
     position: absolute;
+    top: 32.4%;
+    right: 9%;
+    float: left;
+    height: 450px;
+    width: 25%;
+}
+
+#project_info {
+    background-color: white;
+    display: none;
     max-width: 200px;
     width: 100%;
     padding: 1%;
-    right: 9%;
     border: 1px solid black;
     z-index: 2;
 }
@@ -165,14 +181,6 @@ path {
 
 #portfolio-content p a {
     display: inline-block;
-}
-
-#info-container {
-    margin-top: 24%;
-    margin-left: 0;
-    height: 450px;
-    width: 25%;
-    float: right;
 }
 
 #enneagram1 {

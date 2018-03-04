@@ -235,6 +235,7 @@ path {
         background: rgba(255, 255, 240, .7);
         border: none;
         left: 0;
+        bottom: 5%;
         /* height: 100%; */
         /* overflow: scroll; */
     }

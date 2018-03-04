@@ -199,3 +199,46 @@ path {
 #enneagram2 {
     margin-top: .73%;
 }
+
+#q_break {
+    display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    #bio {
+        position: relative;
+        margin-left: 17%;
+        width: 70%;
+    }
+    #contact {
+        position: relative;
+        margin-left: 13.25%;
+        margin-top: 5%;
+        width: 70%;
+    }
+    #portfolio {
+        position: relative;
+        left: 15%;
+        width: 70%;
+        margin-top: 5%;
+    }
+    #site-content-container {
+        /* border: 2px solid red; */
+        padding: 5%;
+    }
+    #playlist {
+        display: none;
+    }
+    #project_info {
+        position: absolute;
+        width: 300px;
+        background: rgba(255, 255, 240, .7);
+        border: none;
+        left: 0;
+        /* height: 100%; */
+        /* overflow: scroll; */
+    }
+    #labels {
+        font-size: 14px;
+    }
+}

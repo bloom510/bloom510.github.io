@@ -230,7 +230,7 @@ path {
         display: none;
     }
     #project_info {
-        position: absolute;
+        position: fixed;
         width: 300px;
         background: rgba(255, 255, 240, .7);
         border: none;

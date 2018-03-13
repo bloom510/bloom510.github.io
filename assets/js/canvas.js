@@ -42,10 +42,11 @@ function goldenRotation(num) {
         let playlist = `<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" id='playlist' src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/456397005&color=%237c948c&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>`
         clearInterval(myTimer);
         ctx.resetTransform();
-        $('#canvas').fadeOut(4000)
+        $('#canvas').fadeOut(3000)
+        $('#container').append(playlist)
         $('#container').fadeIn(6000);
         $('#triangle2').fadeIn(6000);
-        $('#container').append(playlist)
+
     }
 
 

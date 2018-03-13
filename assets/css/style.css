@@ -250,8 +250,7 @@ path {
 /*end query*/
 
 #net2 {
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow: hidden;
 }
 
 #net-container {
@@ -271,6 +270,7 @@ path {
     margin: 0 auto;
     border-bottom: 1.25px solid;
     height: 5px;
+    scroll-behavior:
 }
 
 #net {

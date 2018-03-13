@@ -1,7 +1,3 @@
-$(document).ready(function() {
-    $('#container').hide();
-    $('#triangle2').hide();
-});
 const c = document.getElementById('canvas');
 const ctx = c.getContext('2d');
 

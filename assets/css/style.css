@@ -23,7 +23,6 @@ header {
     height: 100%;
     margin: 0 auto;
     overflow-y: visible;
-    /* overflow-x: hidden; */
     /* position: fixed; */
     /* border: 2px solid red; */
 }
@@ -250,7 +249,12 @@ path {
 
 /*end query*/
 
+#net2 {
+    overflow-x: hidden;
+}
+
 #net-container {
+    overflow-x: hidden;
     font-family: sans-serif;
     max-width: 760px;
     width: 100%;

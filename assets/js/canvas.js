@@ -60,17 +60,3 @@ var myTimer = setInterval(function() {
 
 
 }, 1);
-
-
-
-
-
-// for (key in line_history) {
-
-
-//     ctx.moveTo(line_history[key].x, line_history[key].y);
-
-
-
-
-// }f

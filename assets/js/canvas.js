@@ -59,4 +59,4 @@ var myTimer = setInterval(function() {
     goldenRotation(100)
 
 
-}, 1);
+}, 5);

@@ -17,7 +17,7 @@ var x = width / 2,
 ctx.beginPath()
 
 ctx.lineCap = "round";
-ctx.lineWidth = .0045;
+ctx.lineWidth = .0075;
 
 var colors = ['#ff77aa', '#aaff77', '#77aaff', '#ffffff', '#000000'];
 
@@ -36,7 +36,7 @@ function goldenRotation(num) {
 
     ctx.font = '80px courier';
     ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
-    ctx.fillText('hello world!', width / 2, height / 2);
+    // ctx.fillText('hello world!', width / 2, height / 2);
 
     if (x > width || y > height) {
         let playlist = `<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" id='playlist' src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/456397005&color=%237c948c&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>`

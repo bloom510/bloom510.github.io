@@ -17,6 +17,7 @@ var x = width / 2, //Initial x value at center stage
 
 //Canvas setup
 ctx.beginPath()
+ctx.lineJoin = "round";
 ctx.lineCap = "round";
 ctx.lineWidth = .0075;
 

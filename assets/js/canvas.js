@@ -17,7 +17,7 @@ var x = width / 2,
 ctx.beginPath()
 
 ctx.lineCap = "round";
-ctx.lineWidth = .0075;
+ctx.lineWidth = .0045;
 
 var colors = ['#ff77aa', '#aaff77', '#77aaff', '#ffffff', '#000000'];
 

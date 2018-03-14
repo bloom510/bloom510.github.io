@@ -9,7 +9,7 @@ const height = c.height;
 let done = false;
 //25x, .75 y
 var stepX = 5;
-var stepY = .4;
+var stepY = 1;
 var x = width / 2,
     y = (height / 2) - 50;
 
@@ -26,7 +26,7 @@ var colors = ['#ff77aa', '#aaff77', '#77aaff', '#ffffff', '#000000'];
 function goldenRotation(num) {
 
     ctx.moveTo(x, y);
-    ctx.lineTo(x + (num * (num / 2)), y);
+    ctx.lineTo(x + (num * num), y);
 
     x -= stepX;
     y += stepY

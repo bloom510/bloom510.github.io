@@ -142,8 +142,9 @@ nav {
     -o-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg); */
-    position: relative;
-    left: 29%;
+    /* display: none; */
+    position: absolute;
+    left: 0;
     /* top: 5%; */
     width: 400px;
     height: 100px;
@@ -223,6 +224,7 @@ path {
         left: 15%;
         width: 70%;
         margin-top: 5%;
+        z-index: 100;
     }
     #site-content-container {
         /* border: 2px solid red; */
@@ -250,6 +252,7 @@ path {
 /*end query*/
 
 #net2 {
+    z-index: -1;
     overflow: hidden;
 }
 
@@ -263,6 +266,7 @@ path {
     overflow: hidden;
     position: absolute;
     top: 0;
+    z-index: -1;
     /* border: 2px solid; */
 }
 
@@ -270,7 +274,6 @@ path {
     margin: 0 auto;
     border-bottom: 1.25px solid;
     height: 5px;
-    scroll-behavior:
 }
 
 #net {

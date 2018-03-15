@@ -8,10 +8,12 @@ const width = c.width;
 const height = c.height;
 let done = false;
 
+var x = (width / 2), //Initial x value at center stage
+    y = (height / 2) - 550; //Initial y value at center stage
+
+
 var stepX = 5; //Initial value: 25 ... increment for which X values will change
 var stepY = 1; //Initial value: .75 ... increment for which X values will change
-var x = width / 2, //Initial x value at center stage
-    y = (height / 2) - 50; //Initial y value at center stage
 
 // let PHI = (1 + Math.sqrt(5)) / 2;
 
@@ -23,13 +25,13 @@ function mandala() {
     ctx.lineWidth = .0075;
 
     //Optional colors for text if you like
-    var colors = ['#ff77aa', '#aaff77', '#77aaff', '#ffffff', '#000000'];
+    // var colors = ['#ff77aa', '#aaff77', '#77aaff', '#ffffff', '#000000'];
 
     //The meat and potatoes
     function goldenRotation(num) {
 
         ctx.moveTo(x, y); //begin drawing from the start XY values
-        ctx.lineTo(x + (num * num), y); //You can play around with this to change up the pattern 
+        ctx.lineTo(x + Math.pow(num, 2), y); //You can play around with this to change up the pattern 
 
 
         x -= stepX; //increment x
@@ -39,8 +41,8 @@ function mandala() {
         ctx.rotate((Math.PI * PHI) * .5); //circular rotation by the golden number
         ctx.stroke(); //render to canvas
 
-        ctx.font = '80px courier';
-        ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+        // ctx.font = '80px courier';
+        // ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
         // ctx.fillText('hello world!', width / 2, height / 2);
 
 

@@ -19,10 +19,12 @@ var stepY = 1; //Initial value: .75 ... increment for which X values will change
 
 function mandala() {
     //Canvas setup
-    ctx.beginPath()
     ctx.lineJoin = "round";
     ctx.lineCap = "round";
     ctx.lineWidth = .0075;
+
+    ctx.beginPath()
+
 
     //Optional colors for text if you like
     // var colors = ['#ff77aa', '#aaff77', '#77aaff', '#ffffff', '#000000'];

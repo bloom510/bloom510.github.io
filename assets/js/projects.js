@@ -26,7 +26,8 @@ $(document).ready(function() {
             h20de: '<h3><u>H20de</u></h3> Like hangman, but uses words for water. <br><br> <small>[<a href=\'https://bloom510.github.io/hangman/\' target=\'_blank\'>Click here</a> for demo]</small>',
             bandcamp: 'Unfortunately not all my music has been recorded. A selection of my electronic productions is available on <a href=\'https://bloom510.bandcamp.com\' target=\'_blank\'>BandCamp</a> and <a href=\'https://soundcloud.com/bloom510\' target=\'_blank\'>SoundCloud</a>. I hope to record my instrumental work soon.',
             extaug: 'Info coming soon',
-            nts: 'Info coming soon'
+            nts: 'Info coming soon',
+            fibonacci: '<h3><u>Fun With Fibonacci</u></h3> A small interactive module showcasing the creative process for a series of generative mandallic sketches created using Vanilla JavaScript + HTML5 Canvas. <br><br> <small>[<a href=\'https://bloom510.github.io/FibonacciIntro/Process/process.html\' target=\'_blank\'>Click here</a> for demo]</small>'
 
         }
         //Load project data into div on click

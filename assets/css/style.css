@@ -136,7 +136,7 @@ nav {
 }
 #demo-area{
     margin-top: -10%;
-    border: 1px solid;
+    /* border: 1px solid; */
     text-align: center;
     overflow: hidden;
 

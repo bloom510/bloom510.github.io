@@ -30,12 +30,12 @@ function mandala() {
     ctx.beginPath()
 
     //Optional colors for text if you like
-    var colors = ['#ff77aa', '#aaff77', '#77aaff', '#000000'];
-    ctx.font = '30px courier';
-    let randomColor = colors[Math.floor(Math.random() * colors.length)];
-    ctx.fillStyle = randomColor;
-    ctx.strokeStyle = randomColor;
-    ctx.fillText('Loading', width / 2.35, height / 1.95);
+    // var colors = ['#ff77aa', '#aaff77', '#77aaff', '#000000'];
+    ctx.font = '12px courier';
+    // let randomColor = colors[Math.floor(Math.random() * colors.length)];
+    // ctx.fillStyle = randomColor;
+    // ctx.strokeStyle = randomColor;
+    ctx.fillText('Loading', width / 2.275, height / 2);
 
 
     //The meat and potatoes
@@ -58,11 +58,11 @@ function mandala() {
 
         //if image has filled the frame, stop drawing and do stuff
         if (x > width || y > height) {
-            let playlist = `<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" id='playlist' src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/456397005&color=%237c948c&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>`
+            // let playlist = `<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" id='playlist' src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/456397005&color=%237c948c&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>`
             clearInterval(myTimer);
             ctx.resetTransform();
             $('#canvas').fadeOut(1500)
-            $('#container').append(playlist)
+            // $('#container').append(playlist)
             $('#container').fadeIn(4000);
             $('#triangle2').fadeIn(4000);
 

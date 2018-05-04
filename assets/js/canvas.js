@@ -18,19 +18,29 @@ var stepY = 1; //Initial value: .75 ... increment for which X values will change
 // let PHI = (1 + Math.sqrt(5)) / 2;
 
 function mandala() {
+    if (!canvas.getContext) {
+        // not supported
+        return;
+    }
     //Canvas setup
     ctx.lineJoin = "round";
     ctx.lineCap = "round";
-    ctx.lineWidth = .0075;
+    ctx.lineWidth = .0095;
 
     ctx.beginPath()
 
-
     //Optional colors for text if you like
-    // var colors = ['#ff77aa', '#aaff77', '#77aaff', '#ffffff', '#000000'];
+    var colors = ['#ff77aa', '#aaff77', '#77aaff', '#000000'];
+    ctx.font = '30px courier';
+    let randomColor = colors[Math.floor(Math.random() * colors.length)];
+    ctx.fillStyle = randomColor;
+    ctx.strokeStyle = randomColor;
+    ctx.fillText('Loading', width / 2.35, height / 1.95);
+
 
     //The meat and potatoes
     function goldenRotation(num) {
+       
 
         ctx.moveTo(x, y); //begin drawing from the start XY values
         ctx.lineTo(x + Math.pow(num, 2), y); //You can play around with this to change up the pattern 
@@ -43,9 +53,7 @@ function mandala() {
         ctx.rotate((Math.PI * PHI) * .5); //circular rotation by the golden number
         ctx.stroke(); //render to canvas
 
-        // ctx.font = '80px courier';
-        // ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
-        // ctx.fillText('hello world!', width / 2, height / 2);
+  
 
 
         //if image has filled the frame, stop drawing and do stuff
@@ -68,4 +76,5 @@ function mandala() {
     var myTimer = setInterval(function() {
         goldenRotation(100)
     }, 5);
+    
 }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nathan bloomfield : web developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='./assets/css/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Rock+Salt" rel="stylesheet">
+    <script src="https://use.fontawesome.com/10dc0a4223.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115556815-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115556815-1');
+
+
+        $(document).ready(function() {
+            mandala();
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div id='container'>
+        <!-- begin header -->
+        <header>@bloom.510</header>
+        <div id='triangle'></div>
+        <div id='bottomheader'>
+            <object data="./assets/img/enneagram.svg" type="image/svg+xml" id='enneagram1'></object>
+            <object data="./assets/img/enneagram.svg" type="image/svg+xml" id='enneagram2'></object>
+
+            <header id='labels'>front-end engineer | musician | multimedia artist</header>
+            <!-- <hr> -->
+            <!-- begin social -->
+            <div id='social'>
+                <a href='https://github.com/bloom510' target='_blank'>
+                    <icon class="fab fa-github"></icon>
+                </a>
+                <a href='https://linkedin.com/in/bloom510' target='_blank'>
+                    <icon class="fab fa-linkedin-square"></icon>
+                </a>
+                <a href='https://instagram.com/bloom.510' target='_blank'>
+                    <icon class="fab fa-instagram"></icon>
+                </a>
+                <a href='https://bloom510.tumblr.com' target='_blank'>
+                    <icon class="fab fa-tumblr-square"></icon>
+                </a>
+
+            </div>
+            <!-- end social -->
+        </div>
+        <!-- end header -->
+
+        <div id='site-content-container'>
+            <!-- begin bio -->
+            <div id='bio'>
+                <div class='more-info'>
+                    <h3>Bio</h3>
+                    <span class='expand' data-for='bio-content' select-elements='p'>+</span>
+                </div>
+                <div id='bio-content'>
+                    <p style='display:none;'>
+                        Hey there, I'm Nathan! I'm a unique blend of creative and analytical: a Berkeley native jazz conservatory-trained musician, web developer, and multimedia artist passionate about interactive experiences at the intersection of music, art, and technology.
+                        <br>
+                        <br> Take a look at my portfolio to see my Multidisciplinary, Web Development, Musical, and Theoretical works.
+                        <br>
+                        <br> For a snapshot of my skills, interests, and work experience, my résumé can be <a href='./assets/pdf/NathanResume5-4.pdf' target='_blank'>viewed here</a>.
+                        <br>
+                        <br>
+                        <img src='./assets/img/headshotnew.jpg' id='headshot' />
+                    </p>
+                </div>
+
+            </div>
+            <!-- end bio -->
+
+
+            <!-- begin portfolio -->
+            <div id='portfolio'>
+                <div class='more-info'>
+                    <h3>Portfolio</h3>
+                    <span class='expand' data-for='portfolio-content' select-elements='p' onClick='hideProj()'>+</span>
+                </div>
+                <div id='portfolio-content'>
+                    <p style='display:none;'>
+                        Multidisciplinary:
+                        <br>
+                        <br> > <a href='#' class='project' data-for='vedic'>Vedic</a>
+                        <br> > <a href='#' data-for='pitchcanvas' class='project'>Pitch Canvas</a>
+                        <br> > <a href='#' data-for='fibonacci' class='project'>Fun With Fibonacci</a>
+                        <br>
+                        <br> Web Development:
+                        <br>
+                        <br> > <a href='#' class='project' data-for='stockgen'>StockGEN</a>
+                        <br> > <a href='#' class='project' data-for='socketcanvas'>SocketCanvas</a>
+                        <br> > <a href='#' class='project' data-for='spark'>Spark FriendFinder</a>
+                        <br> > <a href='#' class='project' data-for='burgers'>Brutalist Burgers</a>
+                        <br> > <a href='#' class='project' data-for='bamazon'>Bamazon</a>
+                        <br> > <a href='#' class='project' data-for='liribot'>Liri-Bot</a>
+                        <br> > <a href='#' class='project' data-for='h20de'>H20de</a>
+                        <br>
+                        <br> Music:
+                        <br>
+                        <br> > <a href='#' class='project' data-for='bandcamp'>Bandcamp</a>
+                        <br>
+                        <br> Music Theory:
+                        <br>
+                        <br> > <a href='#' class='project' data-for='extaug'><small>Extended Augmented Harmony</small></a>
+                        <br> > <a href='#' class='project' data-for='nts'>9-Tonic System</a>
+
+                    </p>
+                </div>
+            </div>
+            <!-- end portfolio -->
+
+            <div id='contact'>
+                <div class='more-info'>
+                    <h3>Contact</h3>
+                    <span class='expand' data-for='contact-content' select-elements='p'>+</span>
+                </div>
+                <div id='contact-content'>
+                    <p style='display:none;'>
+                        <br> For all inquiries: <br> <u>bloom510@protonmail.com</u>
+                    </p>
+                </div>
+            </div>
+            <!-- end contact -->
+
+            <!-- begin project info -->
+            <div id='info-container'>
+                <div id='project_info'></div>
+            </div>
+            <!-- end project info -->
+
+            <!-- begin contact -->
+        </div>
+        <div id='demo-area'>
+        <h2>Algorithm Art</h2>
+        <img src='./assets/img/mandalapaper.jpg' />
+        <img src='./assets/img/torus.jpg' />
+        </div>
+       
+    </div>
+    
+
+    </div>
+
+    <!-- <div id='triangle2'>
+        <div id='net2' class='net'></div>
+    </div> -->
+
+    <canvas id='canvas'></canvas>
+</body>
+
+<script src='./assets/js/projects.js'></script>
+<script src='./assets/js/expand.js'></script>
+<script src='./assets/js/triangle.js'></script>
+<script src='./assets/js/canvas.js'></script>
+
+</html>

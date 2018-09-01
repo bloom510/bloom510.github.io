@@ -2,10 +2,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
 }
+
 ul {
     list-style: none;
     padding: 0px;
 }
+
 .flip-btn {
     position: absolute;
     bottom: 1%;
@@ -13,10 +15,11 @@ ul {
     text-align: right;
     cursor:pointer;
 }
+
 .flip-btn:after {
    content:'→'
  }
-/* entire container, keeps perspective */
+
 .flip-container {
     perspective: 1000px;
     padding: 1%;
@@ -25,25 +28,29 @@ ul {
     color: white;
     background-color: black;
 }
-/* flip the pane when hovered */
+
 .flipped {
 	transform: rotateY(180deg);
 }
+
 .stencil{
     position: relative;
     left: -23%;
     height: 240px;
     width: 400px;
 }
+
 .stencil-container {
     border-radius: 3%;
     width: 250px;
     height: auto;
     overflow: hidden;
 }
+
 #stencil-back {
     transform: rotate(180deg)
 }
+
 .flip-container, .front, .back {
     /* text-align: center; */
     padding: 5%;
@@ -51,7 +58,6 @@ ul {
 	height: 480px;
 }
 
-/* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
@@ -59,7 +65,6 @@ ul {
 	position: relative;
 }
 
-/* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
     border: 1px solid white;
@@ -70,14 +75,12 @@ ul {
 	left: 0;
 }
 
-/* front pane, placed above back */
 .front {
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
 }

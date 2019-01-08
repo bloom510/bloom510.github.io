@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bloom510.github.io/card",
+  "homepage": "https://bloom510.github.io/",
   "dependencies": {
     "@material-ui/core": "^3.0.0",
     "@material-ui/icons": "^3.0.1",

@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.75" />
     <title>natalieb.me</title>
     <style>
+      :root {
+        --bg-night-mode: #10111f;
+        --bg-day-mode: #f2f2f2;
+        --text-day-mode: #3a3a3a;
+        --text-night-mode: #696b89;
+      }
       body {
         font: 18px/1.6 "Roboto", sans-serif;
-        background: #f2f2f2;
-        color: #3a3a3a;
+        background: var(--bg-day-mode);
+        color: var(--text-day-mode);
         padding: 20px 40px;
+      }
+      a {
+        color: var(--text-night-mode);
       }
       svg {
         width: 100vw;
@@ -24,9 +33,29 @@
         text-align: justify;
         margin: 0 auto;
       }
-      .testimonials {
-        margin-top: 5vh;
-        text-align: center;
+
+      .heading {
+        font-size: 1.5em;
+        letter-spacing: 0.08em;
+        font-weight: 300;
+        text-shadow: 0 1px 1px #ffffff;
+        text-transform: uppercase;
+        margin-top: 2vh;
+      }
+
+      .divider-1 {
+        border-bottom: 1px solid #fff;
+        background-color: #dadada;
+        height: 1px;
+        margin: 0.5em 0px 1.5em;
+        margin-bottom: 2vh;
+      }
+
+      .divider-1 span {
+        display: block;
+        width: 50px;
+        height: 1px;
+        background-color: black;
       }
     </style>
   </head>
@@ -42,16 +71,19 @@
         and not prescriptive antiquated traditions.
       </p>
 
-      <p>
+      <p style="align-self: flex-start">
         For all inquiries:
         <a href="mailto:natalieb@hey.com">natalieb@hey.com</a>
       </p>
+
     </div>
+
+    <!-- <h1 class="heading"></h1>
+    <div class="divider-1"><span></span></div> -->
 
     <script src="utils.js"></script>
     <script src="constants.js"></script>
     <script src="WaveNode.js"></script>
     <script src="SineWave.js"></script>
-
   </body>
 </html>

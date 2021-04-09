@@ -11,7 +11,20 @@ class SineWave {
     this.theta = 0;
     this.nodes = nodes;
     this.yvalues = new Array(12);
+    this.play();
+  }
+
+  play() {
+    this.paused = false;
     this.calcWave();
+    this.anim = requestAnimationFrame(() => {
+      this.play();
+    });
+  }
+
+  pause() {
+    this.paused = true;
+    cancelAnimationFrame(this.anim);
   }
 
   calcWave() {
@@ -27,9 +40,6 @@ class SineWave {
       x += dx;
     }
     this.theta += 2 * 0.012345679;
-    requestAnimationFrame(() => {
-      this.calcWave();
-    });
   }
 }
 
@@ -47,7 +57,7 @@ window.onload = function () {
       { ref: viewbox }
     );
   });
-  new SineWave(24, 2, pxToNum(width) / 2, nodes, {
+  const w = new SineWave(24, 2, pxToNum(width) / 2, nodes, {
     width: pxToNum(width),
     height: pxToNum(height),
   });

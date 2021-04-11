@@ -4,19 +4,25 @@ class WaveNode {
     this.container = container;
     this.shape.ref = document.createElementNS(
       "http://www.w3.org/2000/svg",
-      "circle"
+      "line"
     );
-    this.shape.ref.setAttribute("cx", shape.cx);
-    this.shape.ref.setAttribute("cy", shape.cy);
-    this.shape.ref.setAttribute("r", shape.r);
-    this.shape.ref.setAttribute("fill", shape.fill);
+    this.shape.ref.setAttribute("stroke-width", 4);
+
+    this.shape.ref.setAttribute("x1", shape.x1);
+    this.shape.ref.setAttribute("y1", shape.y1);
+    this.shape.ref.setAttribute("x2", shape.x2 || 0);
+    this.shape.ref.setAttribute("stroke", shape.stroke);
     container.ref.appendChild(shape.ref);
   }
 
-  moveTo(x, y) {
-    this.shape.cx = numToPx(x);
-    this.shape.cy = numToPx(y);
-    this.shape.ref.setAttribute("cx", x);
-    this.shape.ref.setAttribute("cy", y);
+  setColor(color) {
+    this.shape.ref.setAttribute("stroke", color);
+  }
+
+  moveTo(x1, y1, x2, y2) {
+    this.shape.ref.setAttribute("x1", x1);
+    this.shape.ref.setAttribute("y1", y1);
+    this.shape.ref.setAttribute("x2", x2);
+    this.shape.ref.setAttribute("y2", y2);
   }
 }

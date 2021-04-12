@@ -43,7 +43,7 @@ class SineWave {
       );
       x += dx;
     }
-    this.theta += 2 * 0.012345679;
+    this.theta += 1 * 0.012345679;
   }
 }
 

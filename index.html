@@ -16,12 +16,6 @@
         --btn-primary-disabled: #b19cd9;
       }
 
-      *,
-      *:before,
-      *:after {
-        box-sizing: border-box;
-      }
-
       html {
         -webkit-text-size-adjust: 100%;
       }
@@ -67,7 +61,6 @@
           rgba(207, 215, 230, 0) 100%
         );
         background-color: transparent;
-        max-width: 500px;
         margin: 2em;
         margin-left: auto;
         margin-right: auto;
@@ -112,6 +105,25 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+      }
+
+      #nav:after {
+        content: "";
+        margin: 0 0 1em;
+        background-image: linear-gradient(
+          to right,
+          rgba(207, 215, 230, 0) 0%,
+          #ddd3ee 10%,
+          #ddd3ee 90%,
+          rgba(207, 215, 230, 0) 100%
+        );
+        width: 100%;
+        background-color: transparent;
+        margin: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        height: 1px;
       }
 
       #nav > .btn-primary {

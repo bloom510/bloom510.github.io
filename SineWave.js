@@ -63,7 +63,7 @@ window.onload = function () {
     );
   });
   console.log(nodes);
-  const w = new SineWave(24, 2, pxToNum(width) / 2, nodes, {
+  const w = new SineWave(12, 1, pxToNum(width) / 2, nodes, {
     width: pxToNum(width),
     height: pxToNum(height),
   });

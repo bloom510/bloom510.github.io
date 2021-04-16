@@ -62,7 +62,7 @@ window.onload = function () {
       { ref: viewbox }
     );
   });
-  console.log(nodes);
+
   const w = new SineWave(12, 1, pxToNum(width) / 2, nodes, {
     width: pxToNum(width),
     height: pxToNum(height),

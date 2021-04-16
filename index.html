@@ -16,10 +16,6 @@
         --btn-primary-disabled: #b19cd9;
       }
 
-      html {
-        -webkit-text-size-adjust: 100%;
-      }
-
       body {
         font: 18px/1.6 "Roboto", sans-serif;
         background: var(--bg-day-mode);
@@ -30,6 +26,9 @@
       html,
       body {
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        -webkit-text-size-adjust: 100%;
       }
 
       div {
@@ -68,7 +67,7 @@
         height: 1px;
       }
 
-      .content {
+      .main-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -84,7 +83,7 @@
         border: none;
         outline: none;
         color: white;
-        padding: 15px 32px;
+        padding: 20px 38px;
         text-decoration: none;
         display: inline-block;
         font-weight: bold;
@@ -102,12 +101,13 @@
 
       #nav {
         width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
       }
 
-      .content:after {
+      .main-content:after {
         content: "";
         margin: 0 0 1em;
         background-image: linear-gradient(
@@ -144,13 +144,23 @@
         content: "🚧";
         margin-left: 2vw;
       }
+
+      .footer {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        padding: 15px 32px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <div class="header">
       <svg class="viewbox"></svg>
     </div>
-    <div class="content">
+    <div class="main-content">
       <section class="main">
         <p>
           <strong>Natalie Bloomfield</strong> is a security engineer, full-stack
@@ -171,10 +181,11 @@
       </section>
     </div>
 
-    <div id="construction" style="text-align: center">
-      We're under construction.
+    <div class="footer">
+      <div id="construction" style="text-align: center">
+        We're under construction.
+      </div>
     </div>
-
     <script src="utils.js"></script>
     <script src="constants.js"></script>
     <script src="WaveNode.js"></script>

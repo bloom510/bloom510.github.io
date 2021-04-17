@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <style>
+      :root {
+        --C: #1892cb;
+        --Db: #3d5aa7;
+        --D: #463e8c;
+        --Eb: #783a91;
+        --E: #f5bc1a;
+        --F: #efe83d;
+        --Gb: #cbdc3e;
+        --G: #64ae51;
+        --Ab: #a5264b;
+        --A: #e93229;
+        --Bb: #ea522a;
+        --B: #f29622;
+      }
+      #grad {
+        width: 500px;
+        height: 500px;
+
+        background: conic-gradient(
+          var(--C),
+          var(--Db),
+          var(--D),
+          var(--Eb),
+          var(--E),
+          var(--F),
+          var(--Gb),
+          var(--G),
+          var(--A),
+          var(--Bb),
+          var(--B),
+          var(--C)
+        );
+      }
+
+      #blk1 {
+        width: 150px;
+        height: 150px;
+        background: black;
+        border-radius: 50%;
+        position: absolute;
+        left: 75px;
+      }
+      
+
+      #blk2 {
+        width: 150px;
+        height: 125px;
+        background: black;
+        border-radius: 50%;
+        position: absolute;
+        left: 75px;
+      }
+
+      .container {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="grad"></div>
+    </div>
+  </body>
+</html>

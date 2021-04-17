@@ -1,6 +1,5 @@
 class SineWave {
   constructor(ampl, period = 2, WAVE_WIDTH, nodes, { width, height }) {
-    this.initAmpl = ampl;
     this.ampl = ampl;
     this.period = period;
     this.canvasWidth = WAVE_WIDTH;
@@ -29,7 +28,6 @@ class SineWave {
 
   calcWave() {
     const { dx, canvasHeight } = this;
-    const threshold = this.initAmp * 9;
     let x = this.theta;
     for (let i = 0; i < this.yvalues.length; i++) {
       const offset = this.w / 2;
@@ -56,8 +54,6 @@ window.onload = function () {
         x1: idx * (pxToNum(width) / 12),
         y1: pxToNum(height) / 2,
         stroke: colorModel[note],
-        next: idx !== 11 ? idx + 1 : false,
-        prev: idx ? idx - 1 : false,
       },
       { ref: viewbox }
     );

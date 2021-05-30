@@ -65,7 +65,8 @@ window.onload = function () {
   });
   // document.addEventListener("keydown", (e) => {
   //   if (e.code === "Space") {
-  //     w.play();
+  //     e.preventDefault();
+  //     w.calcWave();
   //   }
   // });
 };

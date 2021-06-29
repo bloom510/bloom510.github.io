@@ -9,12 +9,12 @@
       :root {
         --bg-night-mode: #10111f;
         /* --bg-day-mode: #f2f2f2; */
-        --bg-day-mode: #F6F9F5;
+        --bg-day-mode: #f6f9f5;
 
-        --text-day-mode: #372F31;
+        --text-day-mode: #372f31;
         --text-night-mode: #696b89;
         --link-day-mode: #4372ff;
-        --btn-primary: #7C3FFF;
+        --btn-primary: #7c3fff;
         --btn-primary-disabled: #b19cd9;
       }
 
@@ -153,11 +153,30 @@
       .footer {
         height: 100px;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         flex: 1;
         padding: 15px 32px;
         text-align: center;
+      }
+
+      #social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+      }
+
+      .social-icon-center {
+        width: 25x;
+        height: 25px;
+      }
+
+      .social-icon {
+        width: 25px;
+        height: 25px;
       }
     </style>
   </head>
@@ -195,6 +214,34 @@
     </div>
 
     <div class="footer">
+      <div id="social-icons">
+        <a
+          href="https://github.com/spidercatnat"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img class="social-icon" src="assets/img/github-svgrepo-com.svg" />
+        </a>
+
+        <a
+          href="https://www.instagram.com/chromascopic/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            class="social-icon-center"
+            src="assets/img/instagram-svgrepo-com.svg"
+          />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/spidercatnat/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img class="social-icon" src="assets/img/linkedin-svgrepo-com.svg" />
+        </a>
+      </div>
       <div id="construction" style="text-align: center">
         We're under construction.
       </div>
